@@ -1,11 +1,13 @@
 function sameFrequency(array1,array2){
+    let st_array1 = array1.toString(); 
+    let st_array2 = array2.toString(); 
     if (array1.length !== array2.length) return false;
     let frequency1 = {};
     let frequency2 = {};
-    for (let val in array1){
+    for (let val of st_array1){
         frequency1[val] = (frequency1[val] || 0 ) + 1
     }
-    for (let val in array2){
+    for (let val of st_array2){
         frequency2[val] = (frequency2[val] || 0 ) + 1
     }
     //포문을 사용해 두개가 같은 키 가지고 있는지 확인하기
@@ -20,6 +22,3 @@ function sameFrequency(array1,array2){
     }
     return true;
 }
-
-const result = sameFrequency(183,281)
-console.log(result)
