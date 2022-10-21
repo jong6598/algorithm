@@ -12,6 +12,7 @@ const bubbleSort = (arr) => {
                 noSwaps=false;
             }
         }
+        //변수를 통해 불필요한 반복 방지
         if (noSwaps) break;
     }
     return arr;
