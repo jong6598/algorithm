@@ -18,4 +18,3 @@ const selectionSort = (arr) => {
 };
 
 selectionSort([38, 8, 9, 155, 7, 2]);
-selectionSort([38, 8, 9, 155, 7, 2]);
