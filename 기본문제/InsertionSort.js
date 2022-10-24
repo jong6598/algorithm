@@ -3,11 +3,12 @@ const insertionSort = (arr) =>{
         var selectVal = arr[i]
         for (var j=i-1; j>=0 && arr[j]>selectVal; j--){
            arr[j+1]=arr[j]
+           console.log(arr, "진행사항 확인")
         }
         arr[j+1] = selectVal;
-        console.log(selectVal,arr)
     }
     return arr;
 }
 
-insertionSort([23,32,9,24,17,4])
+insertionSort([2,1,9,76,4])
+
